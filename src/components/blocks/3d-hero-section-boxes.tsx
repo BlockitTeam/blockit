@@ -2,6 +2,7 @@
 
 import React, { useEffect, useRef } from 'react';
 import Spline from '@splinetool/react-spline';
+import Image from 'next/image';
 
 function HeroSplineBackground() {
   return (
@@ -43,7 +44,7 @@ function ScreenshotSection({ screenshotRef }: { screenshotRef: React.RefObject<H
     <section className="relative z-10 container mx-auto px-4 md:px-6 lg:px-8 mt-11 md:mt-12">
       <div ref={screenshotRef} className="bg-gray-900 rounded-xl overflow-hidden shadow-2xl border border-gray-700/50 w-full md:w-[80%] lg:w-[70%] mx-auto">
         <div>
-          <img
+          <Image
             src="https://cdn.sanity.io/images/s6lu43cv/production-v4/13b6177b537aee0fc311a867ea938f16416e8670-3840x2160.jpg?w=3840&h=2160&q=10&auto=format&fm=jpg"
             alt="App Screenshot"
             className="w-full h-auto block rounded-lg mx-auto"
@@ -60,7 +61,7 @@ function HeroContent() {
 
       <div className="w-full lg:w-1/2 pr-0 lg:pr-8 mb-8 lg:mb-0">
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 leading-tight tracking-wide">
-          We're Building<br />Cool Experiences
+          We&apos;re Building<br />Cool Experiences
         </h1>
         <div className="text-sm text-gray-300 opacity-90 mt-4">
           AI \ WEB3 \ UI \ 3D \ MOTION
